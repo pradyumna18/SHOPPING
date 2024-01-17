@@ -1,0 +1,22 @@
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Product Name</th>
+            <th>Products Image</th>
+            <th>Products Price</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cart of cartProducts">
+            <td>{{cart.productId}}</td>
+            <td>{{cart.productName}}</td>
+            <td><img src="{{cart.productImageUrl}}" alt=""></td>
+            <td>{{cart.productPrice}}</td>
+            <td>
+                <button class="btn btn-danger">Remove</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
